@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Brand: blood-red identity, warm paper neutrals ---- */
+  --color-blood-950: #4a0712;
+  --color-blood-900: #6b0c1c;
+  --color-blood-800: #7f0f22;
+  --color-blood-700: #9c1429;
+  --color-blood-600: #b81b2f;
+  --color-blood-500: #d62839;
+  --color-blood-100: #fbe2e2;
+  --color-blood-50: #fdf1ef;
+
+  /* Urgency coding — deliberately distinct from brand red so they read as states, not decoration */
+  --color-urgent: #e35205;
+  --color-urgent-bg: #fdeade;
+  --color-standard: #a3690a;
+  --color-standard-bg: #fbf0db;
+  --color-fulfilled: #2f6b3a;
+  --color-fulfilled-bg: #e6f0e3;
+
+  --color-ink: #241312;
+  --color-ink-soft: #5c4946;
+  --color-paper: #fbf6f2;
+  --color-paper-raised: #ffffff;
+  --color-line: #e6d9d3;
+
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "Work Sans", "Segoe UI", sans-serif;
+  --font-utility: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blood-600);
+  outline-offset: 2px;
+}

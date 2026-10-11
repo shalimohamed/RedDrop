@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "reddrop-a982a"
+  },
+  "targets": {
+    "reddrop-a982a": {
+      "hosting": {
+        "main": [
+          "reddrop"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
